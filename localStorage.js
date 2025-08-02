@@ -246,7 +246,6 @@ function generarPdf(pos) {
     doc.text('Cliente: ' + (pedidos[pos].cliente || ''), 10, 25);
     doc.text('Producto: ' + (pedidos[pos].producto || ''), 10, 35);
     doc.text('Precio: ' + (pedidos[pos].precio || ''), 10, 45);
-    doc.imagen(pedidos[pos].imagen || '', 10, 50, { width: 50, height: 50 });
     doc.text('Observación: ' + (pedidos[pos].observacion || ''), 10, 55);
     doc.text('Fecha: ' + new Date().toLocaleDateString(), 10, 65);
 
